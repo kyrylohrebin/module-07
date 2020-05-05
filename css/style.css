@@ -1,71 +1,87 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat.woff2") format("woff2"),
+    url("../fonts/montserrat.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nautilus Pompilius";
+  src: url("../fonts/nautiluspompilius.woff2") format("woff2"),
+    url("../fonts/nautiluspompilius.woff") format("woff"),
+    url("../fonts/nautiluspompilius.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
-    box-sizing: border-box;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .container {
-    max-width: 98rem;
-    margin: 0 auto;
-  }
-  
-  .navpan {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 90px;
-  }
-  
-  .logo {
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    line-height: 1.2;
-    cursor: pointer;
-    margin: 0;
-    transition: transform 0.2s linear;
-  }
-  
-  .logo a {
-    color: #95e1d3;
-  }
-  
-  .logo:hover {
-    transform: scale(1.2);
-  }
-  
-  .menu {
-    min-width: 490px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .menu a {
-    padding: 10px 0 10px;
-    color: #95e1d3;
-    transition: color 0.2s linear, border-bottom 0.2s linear;
-  }
-  
-  .menu-item {
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    line-height: 1.2;
-    font-weight: bold;
-  }
-  
-  .menu-item:hover a {
-    color: #f38181;
-    border-bottom: 3px solid #f38181;
-  }
-  
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 58.75rem;
+  margin: 0 auto;
+}
+
+.navpan {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  box-sizing: inherit;
+  padding: 1.6rem 0 0;
+  margin-bottom: 7.875rem;
+}
+
+.logo {
+  font-size: 1.625rem;
+  font-family: "Nautilus Pompilius", serif;
+  line-height: 1.2;
+  cursor: pointer;
+  margin: 0;
+  transition: transform 0.2s linear;
+}
+
+.logo a {
+  color: #fed136;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.menu {
+  min-width: 30.625rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  padding: 0.625rem 0 0.625rem;
+  color: #222222;
+  transition: color 0.2s linear, border-bottom 0.2s linear;
+}
+
+.menu-item {
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.menu-item:hover a {
+  color: #fed136;
+}
