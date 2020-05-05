@@ -1,4 +1,4 @@
-@font-face {
+*@font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat.woff2") format("woff2"),
     url("../fonts/montserrat.woff") format("woff"),
@@ -186,3 +186,120 @@ a {
     background-image: url(../img/lock.png);
   }
   
+  .contact {
+    box-sizing: inherit;
+    background-color: rgb(34, 34, 34);
+    background-image: url(../img/map.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.contact_container {
+  box-sizing: inherit;
+}
+
+.contact__heading {
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 6.875rem;
+}
+
+.contact__heading_description {
+    margin: 0 0 4.875rem;
+    font-family: 'Alexander';
+    font-size: 1.2rem;
+    color: rgb(119, 119, 119);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.contact__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: inherit;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.75rem;
+  box-sizing: inherit;
+  margin-right: 1.75rem;
+  box-sizing: inherit;
+}
+
+.Your_E_mail__ {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 250.007px;
+  top: 993.6px;
+  z-index: 15;
+}
+
+
+.contact__form input {
+  width: 28.25rem;
+  height: 3.375rem;
+  padding: 0 0 0 1.25rem;
+  box-sizing: inherit;
+}
+
+.contact__form input:not(:last-child) {
+  margin-bottom: 1.575rem;
+}
+
+.contact__form textarea {
+  width: 28.25rem;
+  height: 13.25rem;
+  margin-bottom: 1.75rem;
+  padding: 1.25rem 0 0 1.25rem;
+  box-sizing: inherit;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+text-transform: uppercase;
+font-size: 0.875rem;
+font-family: "Montserrat";
+color: rgb(187, 187, 187);
+font-weight: bold;
+}
+
+.contact__form input:required:valid,
+.contact__form textarea:valid {
+  outline-color: green;
+}
+
+.contact__form input:required:valid,
+.contact__form textarea:valid {
+  outline-color: red;
+}
+
+.button {
+  display: block;
+  width: 14.875rem;
+  height: 4.125rem;
+  background-color: rgb(254, 209, 54);
+  border-radius: 0.1875rem;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 7.25rem;
+  font-size: 1.125rem;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
