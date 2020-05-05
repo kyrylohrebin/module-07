@@ -16,7 +16,21 @@
   font-style: normal;
 }
 
-html {
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/montserratbold.woff2") format('woff2'), url("../fonts/montserratbold.woff") format('woff'), url("../fonts/montserratbold.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alexander';
+    src: url("../fonts/alexander.woff2") format('woff2'), url("../fonts/alexander.woff") format('woff'), url("../fonts/alexander.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, main {
   box-sizing: border-box;
 }
 
@@ -45,7 +59,7 @@ a {
 
 .logo {
   font-size: 1.625rem;
-  font-family: "Nautilus Pompilius", serif;
+  font-family: "Nautilus Pompilius";
   line-height: 1.2;
   cursor: pointer;
   margin: 0;
@@ -67,6 +81,7 @@ a {
   margin: 0;
   display: flex;
   justify-content: space-between;
+  box-sizing: inherit;
 }
 
 .menu a {
@@ -85,3 +100,89 @@ a {
 .menu-item:hover a {
   color: #fed136;
 }
+
+.services {
+    box-sizing: inherit;
+}
+
+.services__heading {
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    font-family: "Montserrat";
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.services__heading_description {
+    margin: 0 0 10rem;
+    font-family: 'Alexander';
+    font-size: 1.2rem;
+    color: rgb(119, 119, 119);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.services__list {
+    box-sizing: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 0 7rem;
+    list-style: none;
+}
+
+.services__list_item {
+    max-width: 18.125rem;
+    box-sizing: inherit;
+    text-align: center;
+    position: relative;
+}
+
+.services__list_item_heading {
+    font-size: 1.125rem;
+    font-family: "Montserrat";
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+  }
+  
+  .services__list_item_text {
+    font-size: 0.875rem;
+    font-family: "RobotoSlab";
+    color: rgb(119, 119, 119);
+    line-height: 1.2;
+    margin: 0;
+    padding: 0 1.25rem 0;
+  }
+
+  .services__list_item::before {
+    display: block;
+    content: "";
+    width: 4.375rem;
+    height: 4.375rem;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: inherit;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .services__list_item_commerce::before {
+    background-image: url(../img/basket.png);
+  }
+  
+  .services__list_item_web::before {
+    background-image: url(../img/laptop.png);
+  }
+  
+  .services__list_item_secure::before {
+    background-image: url(../img/lock.png);
+  }
+  
