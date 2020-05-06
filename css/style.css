@@ -1,4 +1,4 @@
-*@font-face {
+@font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat.woff2") format("woff2"),
     url("../fonts/montserrat.woff") format("woff"),
@@ -52,6 +52,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
   box-sizing: inherit;
   padding: 1.6rem 0 0;
   margin-bottom: 7.875rem;
@@ -134,9 +135,8 @@ a {
 }
 
 .services__list_item {
-    max-width: 18.125rem;
+    min-width: 18.125rem;
     box-sizing: inherit;
-    text-align: center;
     position: relative;
 }
 
@@ -147,12 +147,14 @@ a {
     font-weight: bold;
     line-height: 1.2;
     margin: 0 0 1rem;
+    text-align: center;
   }
   
   .services__list_item_text {
     font-size: 0.875rem;
     font-family: "RobotoSlab";
     color: rgb(119, 119, 119);
+    text-align: center;
     line-height: 1.2;
     margin: 0;
     padding: 0 1.25rem 0;
@@ -192,6 +194,7 @@ a {
     background-image: url(../img/map.png);
     background-position: right;
     background-repeat: no-repeat;
+    padding-bottom: 7.25rem
 }
 
 .contact_container {
@@ -219,10 +222,14 @@ a {
 }
 
 .contact__form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   box-sizing: inherit;
+  text-align: center;
+}
+
+.form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .form__input {
@@ -251,7 +258,7 @@ a {
 
 .contact__form input {
   width: 28.25rem;
-  height: 3.375rem;
+  height: 3.5rem;
   padding: 0 0 0 1.25rem;
   box-sizing: inherit;
 }
@@ -261,8 +268,8 @@ a {
 }
 
 .contact__form textarea {
+  width: 100%;
   width: 28.25rem;
-  height: 13.25rem;
   margin-bottom: 1.75rem;
   padding: 1.25rem 0 0 1.25rem;
   box-sizing: inherit;
@@ -277,13 +284,8 @@ color: rgb(187, 187, 187);
 font-weight: bold;
 }
 
-.contact__form input:required:valid,
-.contact__form textarea:valid {
-  outline-color: green;
-}
-
-.contact__form input:required:valid,
-.contact__form textarea:valid {
+.contact__form input:invalid,
+.contact__form textarea:invalid {
   outline-color: red;
 }
 
@@ -295,11 +297,12 @@ font-weight: bold;
   border-radius: 0.1875rem;
   color: #ffffff;
   border: none;
-  margin-bottom: 7.25rem;
+  margin: 0rem auto;
   font-size: 1.125rem;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
+  cursor: pointer;
 }
