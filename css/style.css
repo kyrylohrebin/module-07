@@ -284,9 +284,14 @@ color: rgb(187, 187, 187);
 font-weight: bold;
 }
 
-.contact__form input:invalid,
-.contact__form textarea:invalid {
-  outline-color: red;
+.contact__form input:valid,
+.contact__form textarea:valid {
+  border-color: green;
+}
+
+.contact__form input:invalid:not(:placeholder-shown),
+.contact__form textarea:invalid:not(:placeholder-shown) {
+  border-color: red;
 }
 
 .button {
