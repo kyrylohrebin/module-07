@@ -192,7 +192,7 @@ a {
     box-sizing: inherit;
     background-color: rgb(34, 34, 34);
     background-image: url(../img/map.png);
-    background-position: right;
+    background-position: right bottom 1.5rem;
     background-repeat: no-repeat;
     padding-bottom: 7.25rem
 }
@@ -241,38 +241,32 @@ a {
   box-sizing: inherit;
 }
 
-.Your_E_mail__ {
-  font-size: 14px;
-  font-family: "Montserrat";
-  color: rgb(187, 187, 187);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: left;
-  position: absolute;
-  left: 250.007px;
-  top: 993.6px;
-  z-index: 15;
+.contac__form {
+  width: 58.75rem;
 }
 
-
 .contact__form input {
-  width: 28.25rem;
+  width: 28.75rem;
   height: 3.5rem;
   padding: 0 0 0 1.25rem;
   box-sizing: inherit;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
 }
 
 .contact__form input:not(:last-child) {
-  margin-bottom: 1.575rem;
+  margin-bottom: 1.825rem;
 }
 
 .contact__form textarea {
-  width: 100%;
+  height: 13.125rem;
   width: 28.25rem;
   margin-bottom: 1.75rem;
   padding: 1.25rem 0 0 1.25rem;
   box-sizing: inherit;
+  resize: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
 }
 
 .contact__form input::placeholder,
@@ -282,16 +276,19 @@ font-size: 0.875rem;
 font-family: "Montserrat";
 color: rgb(187, 187, 187);
 font-weight: bold;
+outline: none
 }
 
-.contact__form input:valid,
-.contact__form textarea:valid {
+.contact__form input:valid:focus:not(:placeholder-shown),
+.contact__form textarea:valid:focus:not(:placeholder-shown) {
   border-color: green;
+  outline: none;
 }
 
-.contact__form input:invalid:not(:placeholder-shown),
-.contact__form textarea:invalid:not(:placeholder-shown) {
+.contact__form input:invalid:focus:not(:placeholder-shown),
+.contact__form textarea:invalid:focus:not(:placeholder-shown) {
   border-color: red;
+  outline: none;
 }
 
 .button {
