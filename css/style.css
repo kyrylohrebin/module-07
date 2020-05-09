@@ -17,20 +17,34 @@
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/montserratbold.woff2") format('woff2'), url("../fonts/montserratbold.woff") format('woff'), url("../fonts/montserratbold.ttf") format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Montserrat";
+  src: url("../fonts/montserratbold.woff2") format("woff2"),
+    url("../fonts/montserratbold.woff") format("woff"),
+    url("../fonts/montserratbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Alexander';
-    src: url("../fonts/alexander.woff2") format('woff2'), url("../fonts/alexander.woff") format('woff'), url("../fonts/alexander.ttf") format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Alexander";
+  src: url("../fonts/alexander.woff2") format("woff2"),
+    url("../fonts/alexander.woff") format("woff"),
+    url("../fonts/alexander.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-html, main {
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/Robotoslabregular.woff2") format("woff2"),
+    url("../fonts/Robotoslabregular.woff") format("woff"),
+    url("../fonts/Robotoslabregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+main {
   box-sizing: border-box;
 }
 
@@ -103,98 +117,98 @@ a {
 }
 
 .services {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .services__heading {
-    margin: 0 0 1rem;
-    font-size: 2.5rem;
-    font-family: "Montserrat";
-    color: rgb(34, 34, 34);
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .services__heading_description {
-    margin: 0 0 10rem;
-    font-family: 'Alexander';
-    font-size: 1.2rem;
-    color: rgb(119, 119, 119);
-    line-height: 1.2;
-    text-align: center;
+  margin: 0 0 10rem;
+  font-family: "Alexander";
+  font-size: 1.2rem;
+  color: rgb(119, 119, 119);
+  line-height: 1.2;
+  text-align: center;
 }
 
 .services__list {
-    box-sizing: inherit;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0 0 7rem;
-    list-style: none;
+  box-sizing: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 0 7rem;
+  list-style: none;
 }
 
 .services__list_item {
-    min-width: 18.125rem;
-    box-sizing: inherit;
-    position: relative;
+  min-width: 18.125rem;
+  box-sizing: inherit;
+  position: relative;
 }
 
 .services__list_item_heading {
-    font-size: 1.125rem;
-    font-family: "Montserrat";
-    color: rgb(34, 34, 34);
-    font-weight: bold;
-    line-height: 1.2;
-    margin: 0 0 1rem;
-    text-align: center;
-  }
-  
-  .services__list_item_text {
-    font-size: 0.875rem;
-    font-family: "RobotoSlab";
-    color: rgb(119, 119, 119);
-    text-align: center;
-    line-height: 1.2;
-    margin: 0;
-    padding: 0 1.25rem 0;
-  }
+  font-size: 1.125rem;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  text-align: center;
+}
 
-  .services__list_item::before {
-    display: block;
-    content: "";
-    width: 4.375rem;
-    height: 4.375rem;
-    border: 3px solid #fed136;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-sizing: inherit;
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.services__list_item_text {
+  font-size: 0.875rem;
+  font-family: "RobotoSlab";
+  color: rgb(119, 119, 119);
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0 1.25rem 0;
+}
 
-  .services__list_item_commerce::before {
-    background-image: url(../img/basket.png);
-  }
-  
-  .services__list_item_web::before {
-    background-image: url(../img/laptop.png);
-  }
-  
-  .services__list_item_secure::before {
-    background-image: url(../img/lock.png);
-  }
-  
-  .contact {
-    box-sizing: inherit;
-    background-color: rgb(34, 34, 34);
-    background-image: url(../img/map.png);
-    background-position: right bottom 1.5rem;
-    background-repeat: no-repeat;
-    padding-bottom: 7.25rem
+.services__list_item::before {
+  display: block;
+  content: "";
+  width: 4.375rem;
+  height: 4.375rem;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: inherit;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services__list_item_commerce::before {
+  background-image: url(../img/basket.png);
+}
+
+.services__list_item_web::before {
+  background-image: url(../img/laptop.png);
+}
+
+.services__list_item_secure::before {
+  background-image: url(../img/lock.png);
+}
+
+.contact {
+  box-sizing: inherit;
+  background-color: rgb(34, 34, 34);
+  background-image: url(../img/map.png);
+  background-position: right bottom 1.5rem;
+  background-repeat: no-repeat;
+  padding-bottom: 7.25rem;
 }
 
 .contact_container {
@@ -202,23 +216,23 @@ a {
 }
 
 .contact__heading {
-    margin: 0 0 1rem;
-    font-size: 2.5rem;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 6.875rem;
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 6.875rem;
 }
 
 .contact__heading_description {
-    margin: 0 0 4.875rem;
-    font-family: 'Alexander';
-    font-size: 1.2rem;
-    color: rgb(119, 119, 119);
-    line-height: 1.2;
-    text-align: center;
+  margin: 0 0 4.875rem;
+  font-family: "Alexander";
+  font-size: 1.2rem;
+  color: rgb(119, 119, 119);
+  line-height: 1.2;
+  text-align: center;
 }
 
 .contact__form {
@@ -246,12 +260,14 @@ a {
 }
 
 .contact__form input {
-  width: 28.75rem;
+  width: 28.25rem;
   height: 3.5rem;
   padding: 0 0 0 1.25rem;
   box-sizing: inherit;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 2px;
+  font-size: 0.875rem;
+  font-family: "Montserrat";
 }
 
 .contact__form input:not(:last-child) {
@@ -267,16 +283,18 @@ a {
   resize: none;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 2px;
+  font-size: 0.875rem;
+  font-family: "Montserrat";
 }
 
 .contact__form input::placeholder,
 .contact__form textarea::placeholder {
-text-transform: uppercase;
-font-size: 0.875rem;
-font-family: "Montserrat";
-color: rgb(187, 187, 187);
-font-weight: bold;
-outline: none
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  outline: none;
 }
 
 .contact__form input:valid:focus:not(:placeholder-shown),
